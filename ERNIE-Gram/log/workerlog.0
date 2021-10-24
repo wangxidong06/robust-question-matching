@@ -1,0 +1,239 @@
+usage: train.py [-h] --train_set TRAIN_SET --dev_set DEV_SET
+                [--save_dir SAVE_DIR] [--max_seq_length MAX_SEQ_LENGTH]
+                [--max_steps MAX_STEPS] [--train_batch_size TRAIN_BATCH_SIZE]
+                [--eval_batch_size EVAL_BATCH_SIZE]
+                [--learning_rate LEARNING_RATE] [--weight_decay WEIGHT_DECAY]
+                [--epochs EPOCHS] [--eval_step EVAL_STEP]
+                [--save_step SAVE_STEP]
+                [--warmup_proportion WARMUP_PROPORTION]
+                [--init_from_ckpt INIT_FROM_CKPT] [--seed SEED]
+                [--device {cpu,gpu}] [--rdrop_coef RDROP_COEF]
+train.py: error: unrecognized arguments: python train.py
+usage: train.py [-h] --train_set TRAIN_SET --dev_set DEV_SET
+                [--save_dir SAVE_DIR] [--max_seq_length MAX_SEQ_LENGTH]
+                [--max_steps MAX_STEPS] [--train_batch_size TRAIN_BATCH_SIZE]
+                [--eval_batch_size EVAL_BATCH_SIZE]
+                [--learning_rate LEARNING_RATE] [--weight_decay WEIGHT_DECAY]
+                [--epochs EPOCHS] [--eval_step EVAL_STEP]
+                [--save_step SAVE_STEP]
+                [--warmup_proportion WARMUP_PROPORTION]
+                [--init_from_ckpt INIT_FROM_CKPT] [--seed SEED]
+                [--device {cpu,gpu}] [--rdrop_coef RDROP_COEF]
+train.py: error: unrecognized arguments: python train.py
+usage: train.py [-h] --train_set TRAIN_SET --dev_set DEV_SET
+                [--save_dir SAVE_DIR] [--max_seq_length MAX_SEQ_LENGTH]
+                [--max_steps MAX_STEPS] [--train_batch_size TRAIN_BATCH_SIZE]
+                [--eval_batch_size EVAL_BATCH_SIZE]
+                [--learning_rate LEARNING_RATE] [--weight_decay WEIGHT_DECAY]
+                [--epochs EPOCHS] [--eval_step EVAL_STEP]
+                [--save_step SAVE_STEP]
+                [--warmup_proportion WARMUP_PROPORTION]
+                [--init_from_ckpt INIT_FROM_CKPT] [--seed SEED]
+                [--device {cpu,gpu}] [--rdrop_coef RDROP_COEF]
+train.py: error: unrecognized arguments: python train.py
+usage: train.py [-h] --train_set TRAIN_SET --dev_set DEV_SET
+                [--save_dir SAVE_DIR] [--max_seq_length MAX_SEQ_LENGTH]
+                [--max_steps MAX_STEPS] [--train_batch_size TRAIN_BATCH_SIZE]
+                [--eval_batch_size EVAL_BATCH_SIZE]
+                [--learning_rate LEARNING_RATE] [--weight_decay WEIGHT_DECAY]
+                [--epochs EPOCHS] [--eval_step EVAL_STEP]
+                [--save_step SAVE_STEP]
+                [--warmup_proportion WARMUP_PROPORTION]
+                [--init_from_ckpt INIT_FROM_CKPT] [--seed SEED]
+                [--device {cpu,gpu}] [--rdrop_coef RDROP_COEF]
+train.py: error: unrecognized arguments: python train.py
+usage: train.py [-h] --train_set TRAIN_SET --dev_set DEV_SET
+                [--save_dir SAVE_DIR] [--max_seq_length MAX_SEQ_LENGTH]
+                [--max_steps MAX_STEPS] [--train_batch_size TRAIN_BATCH_SIZE]
+                [--eval_batch_size EVAL_BATCH_SIZE]
+                [--learning_rate LEARNING_RATE] [--weight_decay WEIGHT_DECAY]
+                [--epochs EPOCHS] [--eval_step EVAL_STEP]
+                [--save_step SAVE_STEP]
+                [--warmup_proportion WARMUP_PROPORTION]
+                [--init_from_ckpt INIT_FROM_CKPT] [--seed SEED]
+                [--device {cpu,gpu}] [--rdrop_coef RDROP_COEF]
+train.py: error: the following arguments are required: --train_set, --dev_set
+usage: train.py [-h] --train_set TRAIN_SET --dev_set DEV_SET
+                [--save_dir SAVE_DIR] [--max_seq_length MAX_SEQ_LENGTH]
+                [--max_steps MAX_STEPS] [--train_batch_size TRAIN_BATCH_SIZE]
+                [--eval_batch_size EVAL_BATCH_SIZE]
+                [--learning_rate LEARNING_RATE] [--weight_decay WEIGHT_DECAY]
+                [--epochs EPOCHS] [--eval_step EVAL_STEP]
+                [--save_step SAVE_STEP]
+                [--warmup_proportion WARMUP_PROPORTION]
+                [--init_from_ckpt INIT_FROM_CKPT] [--seed SEED]
+                [--device {cpu,gpu}] [--rdrop_coef RDROP_COEF]
+train.py: error: the following arguments are required: --train_set, --dev_set
+W1024 22:26:22.841956 57939 dynamic_loader.cc:238] You may need to install 'nccl2' from NVIDIA official website: https://developer.nvidia.com/nccl/nccl-downloadbefore install PaddlePaddle.
+Traceback (most recent call last):
+  File "train.py", line 223, in <module>
+    do_train()
+  File "train.py", line 104, in do_train
+    paddle.distributed.init_parallel_env()
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/distributed/parallel.py", line 196, in init_parallel_env
+    parallel_helper._init_parallel_ctx()
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/dygraph/parallel_helper.py", line 42, in _init_parallel_ctx
+    __parallel_ctx__clz__.init()
+RuntimeError: (PreconditionNotMet) The third-party dynamic library (libnccl.so) that Paddle depends on is not configured correctly. (error code is libnccl.so: cannot open shared object file: No such file or directory)
+  Suggestions:
+  1. Check if the third-party dynamic library (e.g. CUDA, CUDNN) is installed correctly and its version is matched with paddlepaddle you installed.
+  2. Configure third-party dynamic library environment variables as follows:
+  - Linux: set LD_LIBRARY_PATH by `export LD_LIBRARY_PATH=...`
+  - Windows: set PATH by `set PATH=XXX; (at /paddle/paddle/fluid/platform/dynload/dynamic_loader.cc:265)
+
+W1024 22:36:47.058490  6392 dynamic_loader.cc:238] You may need to install 'nccl2' from NVIDIA official website: https://developer.nvidia.com/nccl/nccl-downloadbefore install PaddlePaddle.
+Traceback (most recent call last):
+  File "train.py", line 223, in <module>
+    do_train()
+  File "train.py", line 104, in do_train
+    paddle.distributed.init_parallel_env()
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/distributed/parallel.py", line 196, in init_parallel_env
+    parallel_helper._init_parallel_ctx()
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/dygraph/parallel_helper.py", line 42, in _init_parallel_ctx
+    __parallel_ctx__clz__.init()
+RuntimeError: (PreconditionNotMet) The third-party dynamic library (libnccl.so) that Paddle depends on is not configured correctly. (error code is libnccl.so: cannot open shared object file: No such file or directory)
+  Suggestions:
+  1. Check if the third-party dynamic library (e.g. CUDA, CUDNN) is installed correctly and its version is matched with paddlepaddle you installed.
+  2. Configure third-party dynamic library environment variables as follows:
+  - Linux: set LD_LIBRARY_PATH by `export LD_LIBRARY_PATH=...`
+  - Windows: set PATH by `set PATH=XXX; (at /paddle/paddle/fluid/platform/dynload/dynamic_loader.cc:265)
+
+[32m[2021-10-24 22:37:42,957] [    INFO][0m - Already cached /home/wangxidong/.paddlenlp/models/ernie-gram-zh/ernie_gram_zh.pdparams[0m
+W1024 22:37:42.958124  7176 device_context.cc:404] Please NOTE: device: 0, GPU Compute Capability: 8.6, Driver API Version: 11.4, Runtime API Version: 10.2
+W1024 22:37:42.959605  7176 device_context.cc:422] device: 0, cuDNN Version: 8.2.
+Traceback (most recent call last):
+  File "train.py", line 223, in <module>
+    do_train()
+  File "train.py", line 114, in do_train
+    pretrained_model = ppnlp.transformers.ErnieGramModel.from_pretrained(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddlenlp/transformers/model_utils.py", line 299, in from_pretrained
+    model = cls(*base_args, **base_kwargs)
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddlenlp/transformers/utils.py", line 83, in __impl__
+    init_func(self, *args, **kwargs)
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddlenlp/transformers/ernie_gram/modeling.py", line 205, in __init__
+    self.embeddings = ErnieGramEmbeddings(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddlenlp/transformers/ernie_gram/modeling.py", line 45, in __init__
+    self.word_embeddings = nn.Embedding(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/nn/layer/common.py", line 1343, in __init__
+    self.weight = self.create_parameter(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/dygraph/layers.py", line 411, in create_parameter
+    return self._helper.create_parameter(temp_attr, shape, dtype, is_bias,
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/layer_helper_base.py", line 369, in create_parameter
+    return self.main_program.global_block().create_parameter(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/framework.py", line 2920, in create_parameter
+    initializer(param, self)
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/initializer.py", line 561, in __call__
+    op = block.append_op(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/framework.py", line 2946, in append_op
+    _dygraph_tracer().trace_op(type,
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/dygraph/tracer.py", line 43, in trace_op
+    self.trace(type, inputs, outputs, attrs,
+SystemError: (Fatal) Operator uniform_random raises an thrust::system::system_error exception.
+The exception content is
+:parallel_for failed: cudaErrorNoKernelImageForDevice: no kernel image is available for execution on the device. (at /paddle/paddle/fluid/imperative/tracer.cc:192)
+
+/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/layers/utils.py:26: DeprecationWarning: `np.int` is a deprecated alias for the builtin `int`. To silence this warning, use `int` by itself. Doing this will not modify any behavior and is safe. When replacing `np.int`, you may wish to use e.g. `np.int64` or `np.int32` to specify the precision. If you wish to review your current use, check the release note link for additional information.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  def convert_to_list(value, n, name, dtype=np.int):
+[32m[2021-10-24 23:00:00,105] [    INFO][0m - Already cached /home/wangxidong/.paddlenlp/models/ernie-gram-zh/ernie_gram_zh.pdparams[0m
+W1024 23:00:00.106789 30817 device_context.cc:362] Please NOTE: device: 0, GPU Compute Capability: 8.6, Driver API Version: 11.4, Runtime API Version: 10.2
+W1024 23:00:00.108422 30817 device_context.cc:372] device: 0, cuDNN Version: 8.2.
+Traceback (most recent call last):
+  File "train.py", line 223, in <module>
+    do_train()
+  File "train.py", line 114, in do_train
+    pretrained_model = ppnlp.transformers.ErnieGramModel.from_pretrained(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddlenlp/transformers/model_utils.py", line 299, in from_pretrained
+    model = cls(*base_args, **base_kwargs)
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddlenlp/transformers/utils.py", line 83, in __impl__
+    init_func(self, *args, **kwargs)
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddlenlp/transformers/ernie_gram/modeling.py", line 205, in __init__
+    self.embeddings = ErnieGramEmbeddings(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddlenlp/transformers/ernie_gram/modeling.py", line 45, in __init__
+    self.word_embeddings = nn.Embedding(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/nn/layer/common.py", line 1350, in __init__
+    self.weight = self.create_parameter(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/dygraph/layers.py", line 407, in create_parameter
+    return self._helper.create_parameter(temp_attr, shape, dtype, is_bias,
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/layer_helper_base.py", line 367, in create_parameter
+    return self.main_program.global_block().create_parameter(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/framework.py", line 2984, in create_parameter
+    initializer(param, self)
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/initializer.py", line 557, in __call__
+    op = block._prepend_op(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/framework.py", line 3096, in _prepend_op
+    _dygraph_tracer().trace_op(type,
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/dygraph/tracer.py", line 43, in trace_op
+    self.trace(type, inputs, outputs, attrs,
+SystemError: (Fatal) Operator uniform_random raises an thrust::system::system_error exception.
+The exception content is
+:parallel_for failed: cudaErrorNoKernelImageForDevice: no kernel image is available for execution on the device. (at /paddle/paddle/fluid/imperative/tracer.cc:172)
+
+[32m[2021-10-24 23:09:37,995] [    INFO][0m - Already cached /home/wangxidong/.paddlenlp/models/ernie-gram-zh/ernie_gram_zh.pdparams[0m
+W1024 23:09:37.996088 41071 device_context.cc:362] Please NOTE: device: 0, GPU Compute Capability: 8.6, Driver API Version: 11.4, Runtime API Version: 10.2
+W1024 23:09:37.997567 41071 device_context.cc:372] device: 0, cuDNN Version: 8.2.
+Traceback (most recent call last):
+  File "train.py", line 223, in <module>
+    do_train()
+  File "train.py", line 114, in do_train
+    pretrained_model = ppnlp.transformers.ErnieGramModel.from_pretrained(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddlenlp/transformers/model_utils.py", line 299, in from_pretrained
+    model = cls(*base_args, **base_kwargs)
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddlenlp/transformers/utils.py", line 83, in __impl__
+    init_func(self, *args, **kwargs)
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddlenlp/transformers/ernie_gram/modeling.py", line 205, in __init__
+    self.embeddings = ErnieGramEmbeddings(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddlenlp/transformers/ernie_gram/modeling.py", line 45, in __init__
+    self.word_embeddings = nn.Embedding(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/nn/layer/common.py", line 1350, in __init__
+    self.weight = self.create_parameter(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/dygraph/layers.py", line 407, in create_parameter
+    return self._helper.create_parameter(temp_attr, shape, dtype, is_bias,
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/layer_helper_base.py", line 367, in create_parameter
+    return self.main_program.global_block().create_parameter(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/framework.py", line 2984, in create_parameter
+    initializer(param, self)
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/initializer.py", line 557, in __call__
+    op = block._prepend_op(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/framework.py", line 3096, in _prepend_op
+    _dygraph_tracer().trace_op(type,
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/dygraph/tracer.py", line 43, in trace_op
+    self.trace(type, inputs, outputs, attrs,
+SystemError: (Fatal) Operator uniform_random raises an thrust::system::system_error exception.
+The exception content is
+:parallel_for failed: cudaErrorNoKernelImageForDevice: no kernel image is available for execution on the device. (at /paddle/paddle/fluid/imperative/tracer.cc:172)
+
+[32m[2021-10-24 23:10:26,119] [    INFO][0m - Already cached /home/wangxidong/.paddlenlp/models/ernie-gram-zh/ernie_gram_zh.pdparams[0m
+W1024 23:10:26.119956 42082 device_context.cc:362] Please NOTE: device: 0, GPU Compute Capability: 8.6, Driver API Version: 11.4, Runtime API Version: 10.2
+W1024 23:10:26.121464 42082 device_context.cc:372] device: 0, cuDNN Version: 8.2.
+Traceback (most recent call last):
+  File "train.py", line 223, in <module>
+    do_train()
+  File "train.py", line 114, in do_train
+    pretrained_model = ppnlp.transformers.ErnieGramModel.from_pretrained(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddlenlp/transformers/model_utils.py", line 299, in from_pretrained
+    model = cls(*base_args, **base_kwargs)
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddlenlp/transformers/utils.py", line 83, in __impl__
+    init_func(self, *args, **kwargs)
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddlenlp/transformers/ernie_gram/modeling.py", line 205, in __init__
+    self.embeddings = ErnieGramEmbeddings(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddlenlp/transformers/ernie_gram/modeling.py", line 45, in __init__
+    self.word_embeddings = nn.Embedding(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/nn/layer/common.py", line 1350, in __init__
+    self.weight = self.create_parameter(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/dygraph/layers.py", line 407, in create_parameter
+    return self._helper.create_parameter(temp_attr, shape, dtype, is_bias,
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/layer_helper_base.py", line 367, in create_parameter
+    return self.main_program.global_block().create_parameter(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/framework.py", line 2984, in create_parameter
+    initializer(param, self)
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/initializer.py", line 557, in __call__
+    op = block._prepend_op(
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/framework.py", line 3096, in _prepend_op
+    _dygraph_tracer().trace_op(type,
+  File "/home/wangxidong/anaconda3/envs/baidu_contest_robust/lib/python3.8/site-packages/paddle/fluid/dygraph/tracer.py", line 43, in trace_op
+    self.trace(type, inputs, outputs, attrs,
+SystemError: (Fatal) Operator uniform_random raises an thrust::system::system_error exception.
+The exception content is
+:parallel_for failed: cudaErrorNoKernelImageForDevice: no kernel image is available for execution on the device. (at /paddle/paddle/fluid/imperative/tracer.cc:172)
+
