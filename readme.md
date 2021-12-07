@@ -1,11 +1,9 @@
-请点击[此处](https://ai.baidu.com/docs#/AIStudio_Project_Notebook/a38e5576)查看本环境基本用法.  <br>
-Please click [here ](https://ai.baidu.com/docs#/AIStudio_Project_Notebook/a38e5576) for more detailed instructions. 
+
 
 
 ```python
 !pip install --upgrade paddlenlp
 ```
-
 
 ```python
 !unzip -o data/data104940/train.zip -d data
@@ -20,11 +18,22 @@ Please click [here ](https://ai.baidu.com/docs#/AIStudio_Project_Notebook/a38e55
 
 
 ```python
+# 加载环境依赖
 !pip install pypinyin 
+!pip install pypinyin
+!pip install ddparser
+!pip install LAC
+```
+
+```python
+# 验证预加载模型效果
+from pypinyin import pinyin, lazy_pinyin, Style
+lazy_pinyin("词语")
 ```
 
 
 ```python
+# 在最优模型上继续训练
 !$unset CUDA_VISIBLE_DEVICES
 !python -u  work/train.py \
        --train_set train.txt \
@@ -41,6 +50,7 @@ Please click [here ](https://ai.baidu.com/docs#/AIStudio_Project_Notebook/a38e55
 
 
 ```python
+# 利用最优模型进行预测
 !$ unset CUDA_VISIBLE_DEVICES
 !python -u \
     work/predict.py \
@@ -52,37 +62,10 @@ Please click [here ](https://ai.baidu.com/docs#/AIStudio_Project_Notebook/a38e55
 ```
 
 
-```python
-from ddparser import DDParser
-ddp = DDParser()
-ddp = DDParser()
-words1= ddp.parse("被蜜蜂蛰了怎么处理")[0]['word']
-words2= ddp.parse("密蜂蛰了怎么处理")[0]['word']
-
-print(words1)
-print(words2)
-
-```
 
 
-```python
-import synonyms
-L1=synonyms.nearby('功效', 16)[0] 
-print(L1)
-L1=[char for str1 in L1 for char in str1 ]
-print(L1)
-```
 
 
-```python
-from pypinyin import pinyin, lazy_pinyin, Style
-lazy_pinyin("词语")
-```
 
 
-```python
-! pip install pypinyin
-! pip install ddparser
-! pip install LAC
 
-```
